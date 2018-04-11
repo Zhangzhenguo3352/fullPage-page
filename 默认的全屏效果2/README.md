@@ -12,10 +12,16 @@ http://www.dowebok.com/131.html
 https://pan.baidu.com/s/1qhyspoA9wXnduaYbttcqZg
 
 
-
+<p align="center">
+  <a href="javascript:;" target="_blank">
+    <img src="https://raw.githubusercontent.com/panteng/wechat-h5-boilerplate/master/demo.jpghttps://github.com/Zhangzhenguo3352/fullPage-page/blob/master/%E9%BB%98%E8%AE%A4%E7%9A%84%E5%85%A8%E5%B1%8F%E6%95%88%E6%9E%9C2/001.png" width="700px">
+    <br>
+    Live Demo
+  </a>
+</p>
 ![效果图][1]
 
 [MIT][1]
 
 
-  [1]: https://raw.githubusercontent.com/panteng/wechat-h5-boilerplate/master/demo.jpghttps://github.com/Zhangzhenguo3352/fullPage-page/blob/master/%E9%BB%98%E8%AE%A4%E7%9A%84%E5%85%A8%E5%B1%8F%E6%95%88%E6%9E%9C2/001.png
+  [1]:
