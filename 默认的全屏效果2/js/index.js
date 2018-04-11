@@ -9,26 +9,39 @@ function wowFn(offset){
   });
   wow.init();
 }
-// 第一屏 动画实现
+// 第四屏 动画实现
+function page4(ele, index) {
+  console.log('index', index)
+}
+// 第三屏 动画实现
 function page3(ele, index) {
-  $(ele).eq( index ).attr('class')
+  console.log(index, '处理你想要的逻辑')
 }
 // 第二屏 动画实现
 function page2(ele, index) {
-  $(ele).eq( index ).attr('class')
+  console.log(index, '处理你想要的逻辑')
+  $('.section').eq(index-1).find('h3').show()
+  $('.section').eq(index-1).find('h3').addClass('wow slideInRight')
 }
 // 第一屏 动画实现
 function page1(ele, index) {
-  $(ele).eq( index ).attr('class')
+  console.log(index)
 }
 function removePage(index) {
   $('.section').find('.wow').hide()
   $('.section').find('.wow').removeClass('wow slideInRight')
 }
-function page(index) {
+var json = {
+  1 : page1,
+  2 : page2,
+  3 : page3,
+  4 : page4
+}
+function page(anchorLink, index) {
   var offset = $('#dowebok').offset().top
-  $('.section').eq(index-1).find('h3').show()
-  $('.section').eq(index-1).find('h3').addClass('wow slideInRight')
+
+  json[index](anchorLink, index)
+
   wowFn(offset)
 }
 
@@ -48,7 +61,7 @@ function fullpageInit() {
 		afterLoad: function(anchorLink , index) {
 			console.log('滚动到某一屏后的回调函数', anchorLink , index)
       removePage( index )
-      page( index )
+      page(anchorLink, index )
 		},
 		onSlideLeave: function() {
 			console.log('某一水平滑块滚动前的回调函数')

@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+/************* Reset CSS *************/
+/* 清除内外边距 */
+html, body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset,iframe, lengend, label, button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+}
+
+/*移动端必须加，下*/
+*,
+::before,
+::after{
+    /*reset css  重制 css*/
+    /*选择所有标签*/
+    margin:0;
+    padding:0;
+
+    /*清楚移动端默认的，点击高亮效果*/
+    -webkit-tap-highlight-color: transparent;
+
+    /*都是以边框开始计算大小,因为是百分比布局，防止溢出*/
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*移动端必须加，上*/
+
+input{
+    /*去除input的默认样式*/
+    border:none;
+    /*去除高亮*/
+    outline:none;
+    /*去除默认的表单样式，的内阴影效果*/
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+
+h1 ,h2 ,h3 ,h4, h5, h6 { font-size: 100%; }
+
+address, cite, dfn, var { font-style: normal; } /* 将斜体扶正 */
+code, kbd, pre, samp, tt { font-family: "Courier New", Courier, monospace; } /* 统一等宽字体 */
+small { font-size: 12px; } /* 小于 12px 的中文很难阅读，让 small 正常化 */
+
+/* 重置列表元素 */
+ul, ol { list-style: none; }
+
+/* 重置文本格式元素 */
+a { text-decoration: none; color:#333;}
+a:hover { text-decoration: none; }
+
+/* 重置表单元素 */
+legend { color: #000; } /* for ie6 */
+fieldset, img, button{ border: none;}
+/* 注：optgroup 无法扶正 */
+button, input, select, textarea {
+    font-size: 100%; /* 使得表单元素在 ie 下能继承字体大小 */
+}
+
+img, iframe, table, form{ vertical-align: top;}
+
+/* 重置表格元素 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 重置 hr */
+hr {
+    border: none;
+    height: 1px;
+}
+/************* Reset CSS *************/
+.clearfix {zoom: 1; }
+.clearfix:after, .clearfix:before {content: "\200B"; display: block; height: 0; visibility: hidden; }
+.clearfix:after {clear: both; }
+/* Global:常用样式 */
+.fl{ float:left;}
+.fr{ float:right;}
+/*.clearfix{display: block; display: table; *display: inline-block; _height: 1%;}/!*清浮动*!/*/
+/*.clearfix:after {content:'\20'; display:block; clear:both;}/!*清浮动*!/*/
+.clearself{ overflow:hidden; _overflow:visible; _height:1%;}
+.inline-block{display:inline-block;*zoom: 1;*display: inline;vertical-align:middle;overflow:hidden;}
+.justify{ text-align: justify; text-justify: inter-ideograph;}
+.clear { font-size: 0px; height: 0px; line-height: 0px; overflow: hidden; clear: both;}
+/* end Global */
+body{    font-size:14px;
+        /*font-family: "Microsoft YaHei",sans-serif;/!*当设备支持 微软雅黑就选择用，不支持是用默认的 sans-serif*!/*/
+        font-family: 'Microsoft Yahei',Arial,Helvetica,sans-serif;
+        color:#333;
+}
+i{font-style: normal}
