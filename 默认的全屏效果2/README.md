@@ -8,8 +8,9 @@ http://www.dowebok.com/131.html
 https://daneden.github.io/animate.css/
 http://www.dowebok.com/131.html      
 ```
-# 还需要 " 考拉 "
-就在 这个项目里,你找找  KoalaSetup.exe
+# 还需要 " 考拉 ",  这是链接
+https://pan.baidu.com/s/1qhyspoA9wXnduaYbttcqZg
+
 
 
 ![效果图][1]
