@@ -9,7 +9,9 @@ https://daneden.github.io/animate.css/
 http://www.dowebok.com/131.html      
 ```
 # 还需要 " 考拉 ",  这是链接
+```
 https://pan.baidu.com/s/1qhyspoA9wXnduaYbttcqZg
+```
 
 
 <p align="center">
@@ -19,9 +21,3 @@ https://pan.baidu.com/s/1qhyspoA9wXnduaYbttcqZg
     Live Demo
   </a>
 </p>
-![效果图][1]
-
-[MIT][1]
-
-
-  [1]:
